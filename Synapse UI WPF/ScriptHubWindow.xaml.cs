@@ -1,0 +1,231 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Net;
+using System.Threading;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media.Imaging;
+using Synapse_UI_WPF.Interfaces;
+using Synapse_UI_WPF.Static;
+
+namespace Synapse_UI_WPF
+{
+
+	class NewEntry
+	{
+		public string Name { get; set; }
+		public string Url { get; set; }
+		public string Picture { get; set; }
+		public string Description { get; set; }
+	}
+	public partial class ScriptHubWindow
+	{
+		private readonly MainWindow Main;
+
+		private readonly Dictionary<string, NewEntry> DictData = new Dictionary<string, NewEntry>();
+
+		private NewEntry CurrentEntry;
+		private Data.ScriptHubHolder Data;
+
+		private bool IsExecuting;
+
+		private BackgroundWorker ExecuteWorker = new BackgroundWorker();
+
+		public ScriptHubWindow(MainWindow _Main)
+		{
+			Main = _Main;
+			WindowStartupLocation = WindowStartupLocation.CenterScreen;
+			ExecuteWorker.DoWork += ExecuteWorker_DoWork;
+
+			InitializeComponent();
+		}
+
+		private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+		{
+			if (e.ChangedButton == MouseButton.Left && e.ButtonState == MouseButtonState.Pressed)
+			{
+				DragMove();
+			}
+		}
+
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			Title = WebInterface.RandomString(WebInterface.Rnd.Next(10, 32));
+
+			var TScriptHub = Globals.Theme.ScriptHub;
+			ThemeInterface.ApplyWindow(this, TScriptHub.Base);
+			ThemeInterface.ApplyLogo(IconBox, TScriptHub.Logo);
+			ThemeInterface.ApplySeperator(TopBox, TScriptHub.TopBox);
+			ThemeInterface.ApplyLabel(TitleBox, TScriptHub.TitleBox);
+			ThemeInterface.ApplyListBox(ScriptBox, TScriptHub.ScriptBox);
+			ThemeInterface.ApplyTextBox(DescriptionBox, TScriptHub.DescriptionBox);
+			ThemeInterface.ApplyButton(MiniButton, TScriptHub.MinimizeButton);
+			ThemeInterface.ApplyButton(ExecuteButton, TScriptHub.ExecuteButton);
+			ThemeInterface.ApplyButton(CloseButton, TScriptHub.CloseButton);
+
+			var Entries = new Dictionary<int, NewEntry> (){
+				[1] = new NewEntry
+				{
+					Name = "Dex",
+					Url = "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/infyiff/backup/main/dex.lua\"))()",
+					Description = "A version of the popular Dex explorer.",
+					Picture = "https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/d/c/3/dc31a109b3ee55701bbfedb5e0f2a79f80e7ebd8.png"
+				},
+				[2] = new NewEntry
+				{
+					Name = "Infinite Yield",
+					Url = "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",
+					Description = "Admin command script.",
+					Picture = "https://www.softlay.com/downloads/wp-content/uploads/Infinite-Yield-Script-Roblox-Pic-1.jpg"
+				},
+				[3] = new NewEntry
+				{
+					Name = "Hydroxide",
+					Url = "local owner = \"Upbolt\"\r\nlocal branch = \"revision\"\r\n\r\nlocal function webImport(file)\r\n    return loadstring(game:HttpGetAsync((\"https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua\"):format(owner, branch, file)), file .. '.lua')()\r\nend\r\n\r\nwebImport(\"init\")\r\nwebImport(\"ui/main\")",
+					Description = "Lua runtime introspection and network capturing tool for games on the Roblox engine.",
+					Picture = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6jiTxcyms6XKy_1LX8SkRqQfaiGsda87qFKFkukghg&s"
+				},
+				[4] = new NewEntry
+				{
+					Name = "Simple Spy",
+					Url = "loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua\"))()",
+					Description = "SimpleSpy is a penetration testing tool designed to intercept remote calls from the client to the server.",
+					Picture = "https://i.ytimg.com/vi/5qwk8S92Mhw/hq720.jpg"
+				},
+				[5] = new NewEntry
+				{
+					Name = "Unnamed ESP",
+					Url = "pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)",
+					Description = "Player ESP for Roblox, fully undetectable, uses built in drawing API if the exploit supports it.",
+					Picture = "https://static.wixstatic.com/media/7f1913_11357da4e80946bc8eacac683298dec2~mv2.png/v1/fill/w_640,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7f1913_11357da4e80946bc8eacac683298dec2~mv2.png"
+				},
+				[6] = new NewEntry
+				{
+					Name = "Vape V4",
+					Url = "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua\", true))()",
+					Description = "Vape V4 for Roblox, because bored.",
+					Picture = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KaKDUFzlLTXYywshcHwvhS8D3aVGYVzsvgKY8xlwIw&s"
+				},
+				[7] = new NewEntry
+				{
+					Name = "Secure Dex",
+					Url = "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua\", true))()",
+					Description = "A version of the popular Dex explorer with patches specifically for Synapse X",
+					Picture = "https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/d/c/3/dc31a109b3ee55701bbfedb5e0f2a79f80e7ebd8.png"
+				}
+			};
+
+			foreach (KeyValuePair<int, NewEntry> Script in Entries)
+			{
+				DictData[Entries[Script.Key].Name] = Entries[Script.Key];
+				ScriptBox.Items.Add(Entries[Script.Key].Name);
+			}
+		}
+
+		private void ScriptBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			if (ScriptBox.SelectedIndex == -1)
+			{
+				return;
+			}
+
+			CurrentEntry = DictData[ScriptBox.Items[ScriptBox.SelectedIndex].ToString()];
+			DescriptionBox.Text = CurrentEntry.Description;
+
+			ScriptPictureBox.Source = new BitmapImage(new Uri(CurrentEntry.Picture));
+		}
+
+		public bool IsOpen()
+		{
+			return Dispatcher.Invoke(() =>
+			{
+				return Application.Current.Windows.Cast<Window>().Any(x => x == this);
+			});
+		}
+
+		private void ExecuteButton_Click(object sender, RoutedEventArgs e)
+		{
+			if (IsExecuting) return;
+			if (CurrentEntry == null) return;
+
+			if (!Main.Ready())
+			{
+				ExecuteButton.Content = "Not attached!";
+
+				new Thread(() =>
+				{
+					Thread.Sleep(1500);
+					if (!IsOpen()) return;
+
+					Dispatcher.Invoke(() =>
+					{
+						ExecuteButton.Content = Globals.Theme.ScriptHub.ExecuteButton.TextNormal;
+					});
+				}).Start();
+
+				return;
+			}
+
+			ExecuteButton.Content = Globals.Theme.ScriptHub.ExecuteButton.TextYield;
+			IsExecuting = true;
+
+			ExecuteWorker.RunWorkerAsync();
+		}
+
+		private void ExecuteWorker_DoWork(object sender, DoWorkEventArgs e)
+		{
+			string ScriptContent;
+
+			try
+			{
+				ScriptContent = CurrentEntry.Url;
+			}
+			catch (Exception)
+			{
+				if (!IsOpen()) return;
+
+				Dispatcher.Invoke(() =>
+				{
+					IsExecuting = false;
+					ExecuteButton.Content = Globals.Theme.ScriptHub.ExecuteButton.TextNormal;
+
+					Topmost = false;
+					MessageBox.Show(
+						"Synapse failed to download script from the script hub. Check your internet connection.",
+						"Synapse X", MessageBoxButton.OK, MessageBoxImage.Error);
+					Topmost = true;
+				});
+
+				return;
+			}
+
+			Dispatcher.Invoke(() =>
+			{
+				if (!IsOpen()) return;
+
+				IsExecuting = false;
+				ExecuteButton.Content = Globals.Theme.ScriptHub.ExecuteButton.TextNormal;
+
+				Main.Execute(ScriptContent);
+			});
+		}
+
+		private void CloseButton_Click(object sender, RoutedEventArgs e)
+		{
+			Close();
+		}
+
+		private void MiniButton_Click(object sender, RoutedEventArgs e)
+		{
+			WindowState = WindowState.Minimized;
+		}
+
+		private void Window_Closing(object sender, CancelEventArgs e)
+		{
+			Main.ScriptHubOpen = false;
+		}
+	}
+}

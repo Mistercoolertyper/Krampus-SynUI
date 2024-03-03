@@ -1,0 +1,38 @@
+﻿using System;
+using System.IO;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Text;
+using Newtonsoft.Json;
+using Synapse_UI_WPF.Static;
+
+namespace Synapse_UI_WPF.Interfaces
+{
+	public static class DataInterface
+	{
+		public static void Save<T>(string Name, T Data)
+		{
+			var Serial = JsonConvert.SerializeObject(Data);
+			var Protected = ProtectedData.Protect(Encoding.UTF8.GetBytes(Serial),
+				Encoding.UTF8.GetBytes(Utils.Sha512(Environment.MachineName + Name)), DataProtectionScope.LocalMachine);
+			File.WriteAllText($"{Constants.currentDir}\\auth\\" + Name + ".bin", Convert.ToBase64String(Protected));
+		}
+		
+		public static T Read<T>(string Name)
+		{
+			var Unprotected = ProtectedData.Unprotect(Convert.FromBase64String(File.ReadAllText($"{Constants.currentDir}\\auth\\" + Name + ".bin")),
+				Encoding.UTF8.GetBytes(Utils.Sha512(Environment.MachineName + Name)), DataProtectionScope.LocalMachine);
+			return JsonConvert.DeserializeObject<T>(Encoding.UTF8.GetString(Unprotected));
+		}
+		
+		public static bool Exists(string Name)
+		{
+			return File.Exists($"{Constants.currentDir}\\auth\\" + Name + ".bin");
+		}
+
+		public static void Delete(string Name)
+		{
+			if (File.Exists($"{Constants.currentDir}\\auth\\" + Name + ".bin")) File.Delete("auth\\" + Name + ".bin");
+		}
+	}
+}

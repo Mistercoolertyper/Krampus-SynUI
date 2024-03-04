@@ -136,7 +136,7 @@ namespace Synapse_UI_WPF
 				if ((robloxProcess = CheckForRoblox()) != null && !(GetProcId() == lastProcId) && !injecting)
 				{
 					WaitForRobloxWindow(robloxProcess);
-					Inject();
+					Dispatcher.Invoke(Inject);
 				}
 				Thread.Sleep(2000);
 			}

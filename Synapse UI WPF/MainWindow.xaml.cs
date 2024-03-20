@@ -136,6 +136,7 @@ namespace Synapse_UI_WPF
 				if ((robloxProcess = CheckForRoblox()) != null && !(GetProcId() == lastProcId) && !injecting)
 				{
 					WaitForRobloxWindow(robloxProcess);
+					Thread.Sleep(5000); //Krampus injection is so fast now that starting when the roblox window is shown is too early and will crash ur game.
 					Dispatcher.Invoke(Inject);
 				}
 				Thread.Sleep(2000);

@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\synapse ui wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|d:\\backups\\users\\leonw\\desktop\\programming\\visual studio 2022\\roblox\\synapseui-for-krampus-master\\synapseui-for-krampus-master\\synapse ui wpf\\scripthubwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\scripthubwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\synapse ui wpf\\scripthubwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\scripthubwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\synapse ui wpf\\optionswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\optionswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\synapse ui wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|d:\\backups\\users\\leonw\\desktop\\programming\\visual studio 2022\\roblox\\synapseui-for-krampus-master\\synapseui-for-krampus-master\\synapse ui wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|d:\\backups\\users\\leonw\\desktop\\programming\\visual studio 2022\\roblox\\synapseui-for-krampus-master\\synapseui-for-krampus-master\\synapse ui wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{478009EF-CC2D-4C7B-9DBB-1B8B606AB7A2}|Synapse UI WPF\\Synapse UI WPF.csproj|solutionrelative:synapse ui wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScriptHubWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\ScriptHubWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Synapse UI WPF\\ScriptHubWindow.xaml.cs",
-              "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\ScriptHubWindow.xaml.cs",
-              "RelativeToolTip": "Synapse UI WPF\\ScriptHubWindow.xaml.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:39:51.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScriptHubWindow.xaml",
-              "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\ScriptHubWindow.xaml",
-              "RelativeDocumentMoniker": "Synapse UI WPF\\ScriptHubWindow.xaml",
-              "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\ScriptHubWindow.xaml",
-              "RelativeToolTip": "Synapse UI WPF\\ScriptHubWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-05T21:39:47.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Synapse UI WPF\\MainWindow.xaml",
               "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml",
               "RelativeToolTip": "Synapse UI WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-04T12:43:56.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Synapse UI WPF\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Synapse UI WPF\\MainWindow.xaml.cs*",
-              "ViewState": "AQIAAHcAAAAAAAAAAAA8wIoAAACOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T20:29:37.367Z",
+              "WhenOpened": "2024-03-21T12:57:03.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OptionsWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\OptionsWIndow.xaml.cs",
-              "RelativeDocumentMoniker": "Synapse UI WPF\\OptionsWIndow.xaml.cs",
-              "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\OptionsWIndow.xaml.cs",
-              "RelativeToolTip": "Synapse UI WPF\\OptionsWIndow.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAIwEAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Synapse UI WPF\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Backups\\Users\\LeonW\\Desktop\\Programming\\Visual Studio 2022\\Roblox\\SynapseUI-For-Krampus-master\\SynapseUI-For-Krampus-master\\Synapse UI WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Synapse UI WPF\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAP4BAAAAAAAAAAAEwBQCAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T20:26:32.9Z"
+              "WhenOpened": "2024-02-27T20:29:37.367Z",
+              "EditorCaption": ""
             }
           ]
         }

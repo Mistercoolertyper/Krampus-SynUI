@@ -219,7 +219,6 @@ namespace Synapse_UI_WPF
 
 		private void CloseButton_Click(object sender, RoutedEventArgs e)
 		{
-
 			if (!File.Exists($"{Constants.currentDir}/bin/tabs/{CurrentTab()}.txt")) File.WriteAllText($"{Constants.currentDir}/bin/tabs/{CurrentTab()}.txt", "");
 			File.WriteAllText($"{Constants.currentDir}/bin/tabs/{CurrentTab()}.txt", Browser.GetText());
 			Environment.Exit(0);
@@ -354,42 +353,36 @@ namespace Synapse_UI_WPF
 			{
 				File.WriteAllText($"{Constants.currentDir}\\krampusPath.cfg", "");
 			}
-			string content = File.ReadAllText($"{Constants.currentDir}\\krampusPath.cfg");
-			if (!Directory.Exists(content))
+			string krampus = File.ReadAllText($"{Constants.currentDir}\\krampusPath.cfg");
+			if (!File.Exists(krampus))
 			{
-				var dialog = new CommonOpenFileDialog();
-				dialog.IsFolderPicker = true;
-				dialog.Title = "Pick Krampus Folder";
-				CommonFileDialogResult result = dialog.ShowDialog();
-				try
+				var dialog = new OpenFileDialog
 				{
-					content = dialog.FileName;
-				}
-				catch (Exception)
+					Filter = "Executable Files (.exe)|*.exe",
+					Title = "Select Krampus EXE"
+				};
+				bool result = dialog.ShowDialog().Value;
+				if (result)
+				{
+					krampus = dialog.FileName;
+				} else
 				{
 					return;
 				}
 				File.WriteAllText($"{Constants.currentDir}\\krampusPath.cfg", dialog.FileName);
 			}
-			string krampus = "";
-			foreach (string fileName in Directory.EnumerateFiles(content))
-			{
-				if (fileName.EndsWith(".exe"))
-				{
-					krampus = fileName;
-				}
-			}
 			var process = new Process()
 			{
-				StartInfo = new ProcessStartInfo(krampus)
+				StartInfo = new ProcessStartInfo()
 				{
+					FileName = krampus,
 					RedirectStandardError = true,
 					RedirectStandardInput = true,
 					RedirectStandardOutput = true,
 					UseShellExecute = false,
 					CreateNoWindow = true,
 					WindowStyle = ProcessWindowStyle.Hidden,
-					WorkingDirectory = content
+					WorkingDirectory = new FileInfo(krampus).DirectoryName
 				}
 			};
 
@@ -504,36 +497,6 @@ namespace Synapse_UI_WPF
 			}
 		}
 
-		private void SwitchTab(int index)
-		{
-			Dispatcher.BeginInvoke((Action)(() => TabSystem.SelectedItem = TabSystem.Items[index]));
-			SetEditor(File.ReadAllText($"{Constants.currentDir}/bin/tabs/{CurrentTab()}.txt"));
-		}
-
-		private void CloseTab_Click(object sender, RoutedEventArgs e)
-		{
-			if (TabSystem.SelectedIndex == -1) return;
-
-			try
-			{
-				MessageBox.Show("No work for now!", "Synapse X");
-				/*string path = $"{Constants.currentDir}/bin/tabs/{CurrentTab()}.txt";
-				int index = TabSystem.SelectedIndex;
-				SwitchTab(TabSystem.SelectedIndex + (TabSystem.SelectedIndex == 1 ? 1 : -1));
-				File.Delete(path);
-				ItemCollection items = TabSystem.Items;
-				TabSystem.DataContext = null;
-				MessageBox.Show(index + "");
-				items.RemoveAt(index);
-				TabSystem.DataContext = items;
-				Console.WriteLine(CurrentTab());*/
-			}
-			catch (Exception b)
-			{
-				MessageBox.Show(b + "", "Synapse X", MessageBoxButton.OK, MessageBoxImage.Warning);
-			}
-		}
-
 		private void ClearTab_Click(object sender, RoutedEventArgs e)
 		{
 			if (TabSystem.SelectedIndex == -1) return;
@@ -551,38 +514,56 @@ namespace Synapse_UI_WPF
 
 		private object CurrentTab()
 		{
-			var Tab = TabSystem.SelectedItem as TabItem;
-			return Tab.Header;
+			var Tab = TabSystem.SelectedItem as ClosableTab;
+			if (Tab == null)
+			{
+				var Tab1 = TabSystem.SelectedItem as TabItem;
+				return Tab1.Header;
+			}
+			return Tab.Title;
 		}
+
 		private void CreateTab(string Name)
 		{
-			TabItem NewTab = new TabItem();
-			NewTab.Header = Name;
-			var Converter = new BrushConverter();
-			NewTab.Background = (System.Windows.Media.Brush)Converter.ConvertFromString("#696969");
-			NewTab.Foreground = (System.Windows.Media.Brush)Converter.ConvertFromString("#909090");
-			NewTab.BorderBrush = (System.Windows.Media.Brush)Converter.ConvertFromString("#545454");
-			ContextMenu contextMenu = new ContextMenu();
-			MenuItem item = new MenuItem()
+			var NewTab = new ClosableTab
 			{
-				Header = "Close Tab",
+				Title = Name
 			};
-			item.Click += CloseTab_Click;
-			contextMenu.Items.Add(item);
-			NewTab.ContextMenu = contextMenu;
+			var Converter = new BrushConverter();
+			NewTab.Background = (Brush)Converter.ConvertFromString("#696969");
+			NewTab.Foreground = (Brush)Converter.ConvertFromString("#909090");
+			NewTab.BorderBrush = (Brush)Converter.ConvertFromString("#545454");
 			TabSystem.Items.Insert(TabSystem.Items.Count - 1, NewTab);
-			Dispatcher.BeginInvoke(new Action(() => TabSystem.SelectedIndex = TabSystem.Items.Count-2));
+			Dispatcher.BeginInvoke(new Action(() => TabSystem.SelectedItem = NewTab));
 		}
 
 		private object lastTab = null;
+
+		private string TabName(int last = 1)
+		{
+			string name = "Tab " + last;
+			foreach(var tab in TabSystem.Items)
+			{
+				if (tab is ClosableTab)
+				{
+					var tab1 = tab as ClosableTab;
+					if (tab1.Title == name)
+					{
+						return TabName(last + 1);
+					}
+				}
+			}
+			return name;
+		}
 
 		private void TabSystem_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			Globals.CurrentTab = CurrentTab();
 			if (e.AddedItems.Contains(AddTabButton))
 			{
-				CreateTab("Tab " + (TabSystem.Items.Count));
-			} else
+				CreateTab(TabName());
+			}
+			else
 			{
 				if (lastTab != null)
 				{

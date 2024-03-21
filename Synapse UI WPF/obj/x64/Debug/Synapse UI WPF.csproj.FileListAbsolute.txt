@@ -268,3 +268,5 @@ D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-F
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse .F54F7297.Up2Date
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.exe
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.pdb
+D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.baml
+D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.g.cs

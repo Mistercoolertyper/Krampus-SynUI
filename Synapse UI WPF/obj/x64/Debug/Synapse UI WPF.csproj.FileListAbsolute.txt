@@ -270,3 +270,138 @@ D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-F
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.pdb
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.baml
 D:\Backups\Users\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\cef.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\cef_100_percent.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\cef_200_percent.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\cef_extensions.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\chrome_elf.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\d3dcompiler_47.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\devtools_resources.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\icudtl.dat
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\libcef.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\libEGL.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\libGLESv2.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\am.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ar.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\bg.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\bn.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ca.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\cs.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\da.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\de.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\el.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\en-GB.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\en-US.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\es-419.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\es.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\et.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\fa.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\fi.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\fil.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\fr.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\gu.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\he.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\hi.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\hr.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\hu.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\id.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\it.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ja.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\kn.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ko.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\lt.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\lv.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ml.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\mr.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ms.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\nb.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\nl.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\pl.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\pt-BR.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\pt-PT.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ro.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ru.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\sk.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\sl.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\sr.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\sv.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\sw.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\ta.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\te.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\th.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\tr.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\uk.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\vi.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\zh-CN.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\locales\zh-TW.pak
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\natives_blob.bin
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\README.txt
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\snapshot_blob.bin
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\swiftshader\libEGL.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\swiftshader\libGLESv2.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\v8_context_snapshot.bin
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.BrowserSubprocess.Core.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.BrowserSubprocess.Core.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.BrowserSubprocess.exe
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.BrowserSubprocess.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Core.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Core.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Core.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.XML
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Wpf.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Wpf.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\CefSharp.Wpf.XML
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Synapse UI WPF.exe.config
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Synapse UI WPF.exe
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Synapse UI WPF.pdb
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\dnlib.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\EntityFramework.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Core.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Newtonsoft.Json.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\RestSharp.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Data.SQLite.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Data.SQLite.EF6.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Data.SQLite.Linq.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Windows.Forms.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\websocket-sharp.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\WindowsFormsIntegration.dll
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\dnlib.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\EntityFramework.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\Newtonsoft.Json.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\RestSharp.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Data.SQLite.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Data.SQLite.dll.config
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\System.Windows.Forms.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\websocket-sharp.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\bin\Debug\WindowsFormsIntegration.xml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.csproj.AssemblyReference.cache
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.baml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\CloseableHeader.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\LoadWindow.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\MainWindow.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\OptionsWindow.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\ScriptHubWindow.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\App.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF_Content.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF_MarkupCompile.cache
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF_MarkupCompile.lref
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\LoadWindow.baml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\MainWindow.baml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\OptionsWindow.baml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\ScriptHubWindow.baml
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.g.resources
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse_UI_WPF.Properties.Resources.resources
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.csproj.GenerateResource.cache
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.csproj.CoreCompileInputs.cache
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse .F54F7297.Up2Date
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.exe
+Z:\Backups\LeonW\Desktop\Programming\Visual Studio 2022\Roblox\SynapseUI-For-Krampus-master\SynapseUI-For-Krampus-master\Synapse UI WPF\obj\x64\Debug\Synapse UI WPF.pdb

@@ -261,17 +261,10 @@ namespace Synapse_UI_WPF
 			Dispatcher.Invoke(() =>
 			{
 				SetStatusText("Success", 100);
-				if (!File.Exists($"{Constants.currentDir}\\launch.cfg"))
-				{
-					var login = new LoginWindow();
-					login.Show();
-				} else
-				{
-					var main = new MainWindow();
-					Constants.mainWindow = main;
-					main.Show();
-				}
-				Close();
+				var main = new MainWindow();
+				Constants.mainWindow = main;
+				Visibility = Visibility.Hidden;
+				main.Show();
 			});
 		}
 	}

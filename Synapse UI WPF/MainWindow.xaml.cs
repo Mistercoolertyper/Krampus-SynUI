@@ -19,6 +19,7 @@ using Synapse_UI_WPF.Controls;
 using Synapse_UI_WPF.Interfaces;
 using Synapse_UI_WPF.Static;
 using WebSocketSharp;
+using WebSocketSharp.Server;
 using static Synapse_UI_WPF.Interfaces.ThemeInterface;
 using Process = System.Diagnostics.Process;
 
@@ -44,7 +45,15 @@ namespace Synapse_UI_WPF
 		public static BackgroundWorker Worker = new BackgroundWorker();
 		public static BackgroundWorker HubWorker = new BackgroundWorker();
 
-		private WebSocket ws;
+		private WebSocketServer ws;
+
+		public class Echo : WebSocketBehavior
+		{
+			protected override void OnMessage(MessageEventArgs e)
+			{
+				
+			}
+		}
 
 		public MainWindow()
 		{
@@ -58,37 +67,43 @@ namespace Synapse_UI_WPF
 			HubWorker.DoWork += HubWorker_DoWork;
 
 			var TMain = Globals.Theme.Main;
-			ThemeInterface.ApplyWindow(this, TMain.Base);
-			ThemeInterface.ApplyLogo(IconBox, TMain.Logo);
-			ThemeInterface.ApplySeperator(TopBox, TMain.TopBox);
-			ThemeInterface.ApplyFormatLabel(TitleBox, TMain.TitleBox, Globals.Version);
-			ThemeInterface.ApplyListBox(ScriptBox, TMain.ScriptBox);
-			ThemeInterface.ApplyButton(MiniButton, TMain.MinimizeButton);
-			ThemeInterface.ApplyButton(CloseButton, TMain.ExitButton);
-			ThemeInterface.ApplyButton(ExecuteButton, TMain.ExecuteButton);
-			ThemeInterface.ApplyButton(ClearButton, TMain.ClearButton);
-			ThemeInterface.ApplyButton(OpenFileButton, TMain.OpenFileButton);
-			ThemeInterface.ApplyButton(ExecuteFileButton, TMain.ExecuteFileButton);
-			ThemeInterface.ApplyButton(SaveFileButton, TMain.SaveFileButton);
-			ThemeInterface.ApplyButton(OptionsButton, TMain.OptionsButton);
-			ThemeInterface.ApplyButton(AttachButton, TMain.AttachButton);
-			ThemeInterface.ApplyButton(ScriptHubButton, TMain.ScriptHubButton);
+			ApplyWindow(this, TMain.Base);
+			ApplyLogo(IconBox, TMain.Logo);
+			ApplySeperator(TopBox, TMain.TopBox);
+			ApplyFormatLabel(TitleBox, TMain.TitleBox, Globals.Version);
+			ApplyListBox(ScriptBox, TMain.ScriptBox);
+			ApplyButton(MiniButton, TMain.MinimizeButton);
+			ApplyButton(CloseButton, TMain.ExitButton);
+			ApplyButton(ExecuteButton, TMain.ExecuteButton);
+			ApplyButton(ClearButton, TMain.ClearButton);
+			ApplyButton(OpenFileButton, TMain.OpenFileButton);
+			ApplyButton(ExecuteFileButton, TMain.ExecuteFileButton);
+			ApplyButton(SaveFileButton, TMain.SaveFileButton);
+			ApplyButton(OptionsButton, TMain.OptionsButton);
+			ApplyButton(AttachButton, TMain.AttachButton);
+			ApplyButton(ScriptHubButton, TMain.ScriptHubButton);
 
 			ScaleTransform.ScaleX = 1D;
 			ScaleTransform.ScaleY = 1D;
 
 			BaseDirectory = Directory.GetParent(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)).FullName;
 
-			var text = File.ReadAllText($"{Constants.currentDir}\\launch.cfg");
-			ws = new WebSocket("wss://loader.live/?login_token=\"" + text + "\"");
+			//var text = File.ReadAllText($"{Constants.currentDir}\\launch.cfg");
+			ws = new WebSocketServer("ws://localhost:6969");
+			ws.AddWebSocketService<Echo>("/test");
+			ws.Start();
+			Console.WriteLine("started" + ws.Port);
 
-			ws.OnClose += (obj, args) =>
+			new Thread(() =>
 			{
-				Thread.Sleep(1000);
-				ws.Connect();
-			};
+				while (true)
+				{
+					ws.WebSocketServices.Broadcast("kr-ping");
+					Thread.Sleep(500);
+				}
+			}).Start();
 
-			ws.Connect();
+			SetupAutoExec();
 
 			ScriptsDirectory = Path.Combine(BaseDirectory, "scripts");
 			if (!Directory.Exists((ScriptsDirectory))) Directory.CreateDirectory(ScriptsDirectory);
@@ -113,6 +128,53 @@ namespace Synapse_UI_WPF
 				new Thread(() => OptionsWindow.StartAutoLaunchLoop()).Start();
 			}
 			Topmost = Globals.Options.Topmost;
+		}
+
+		private void SetupAutoExec()
+		{
+			if (!File.Exists($"{Constants.currentDir}\\krampusPath.cfg") || File.ReadAllText($"{Constants.currentDir}\\krampusPath.cfg") == "") return;
+			Console.WriteLine(new FileInfo(File.ReadAllText($"{Constants.currentDir}\\krampusPath.cfg")).DirectoryName);
+			var path = new DirectoryInfo(new FileInfo(File.ReadAllText($"{Constants.currentDir}\\krampusPath.cfg")).DirectoryName);
+			if (path.Exists && Directory.Exists($"{path.FullName}\\autoexec"))
+			{
+				File.WriteAllText($"{path.FullName}\\autoexec\\KrampusSynUI.lua", @"--credits to Pixeluted/KrampUI for this script cuz i was too lazy to make it myself
+while task.wait(0.25) do
+	if getgenv().KR_READY then
+		return
+	end
+
+	pcall(function()
+		getgenv().KR_WEBSOCKET = websocket.connect(""ws://localhost:6969/test"")
+		getgenv().KR_READY = true
+		local lastAlive = nil
+
+		getgenv().KR_WEBSOCKET.OnMessage:Connect(function(message)
+			if message == ""kr-ping"" then
+				lastAlive = os.time()
+			else
+				local func, err = loadstring(message)
+
+				if not func then
+					error(err)
+				else
+					task.spawn(func)
+				end
+			end
+		end)
+
+		while getgenv().KR_READY and task.wait(0.1) do
+			if lastAlive and os.time() - lastAlive > 1 then
+				pcall(function ()
+					getgenv().KR_WEBSOCKET:Close()
+				end)
+
+				getgenv().KR_READY = false
+			end
+		end
+	end)
+end
+");
+			}
 		}
 
 		private bool loopRunning = false;
@@ -176,7 +238,7 @@ namespace Synapse_UI_WPF
 			{
 				try
 				{
-					ws.Send("<SCRIPT>" + data);
+					ws.WebSocketServices.Broadcast(data);
 				} catch {
 					MessageBox.Show("Unable to execute!", "Synapse X", MessageBoxButton.OK, MessageBoxImage.Error);
 				}
@@ -371,6 +433,7 @@ namespace Synapse_UI_WPF
 				}
 				File.WriteAllText($"{Constants.currentDir}\\krampusPath.cfg", dialog.FileName);
 			}
+			SetupAutoExec();
 			var process = new Process()
 			{
 				StartInfo = new ProcessStartInfo()
